@@ -1,0 +1,5 @@
+Dear {{ user.username }},
+
+Here's the post you requested from {{ postAuthor }}
+
+{{ postBody }}

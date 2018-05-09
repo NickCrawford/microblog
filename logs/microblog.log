@@ -1,0 +1,89 @@
+2018-05-08 19:18:23,708 ERROR: Exception on /edit_profile [GET] [in /Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/app/main/routes.py", line 83, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_zip'
+2018-05-08 19:19:06,140 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:20:07,873 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:20:19,997 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:25:04,180 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:25:48,275 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:41:59,201 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:42:14,272 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:43:23,684 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:45:12,118 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 19:48:19,553 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 20:10:27,637 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 20:10:36,524 ERROR: Exception on /send_copy [POST] [in /Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/app/main/routes.py", line 158, in send_copy
+    post = form.postId.data
+NameError: name 'form' is not defined
+2018-05-08 20:17:02,829 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 20:17:09,704 ERROR: Exception on /send_copy [POST] [in /Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/app/main/routes.py", line 161, in send_copy
+    send_copy(user, post)
+TypeError: send_copy() takes 0 positional arguments but 2 were given
+2018-05-08 20:23:20,167 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 20:23:22,404 ERROR: Exception on /send_copy [POST] [in /Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/app/main/routes.py", line 161, in send_copy
+    send_copy_email(user, post)
+  File "/Users/nicholascrawford/github.com/cloudapps/microblog/app/main/email.py", line 9, in send_copy_email
+    recipients=[user.email],
+AttributeError: 'str' object has no attribute 'email'
+2018-05-08 20:29:11,576 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
+2018-05-08 20:32:42,983 INFO: Microblog startup [in /Users/nicholascrawford/github.com/cloudapps/microblog/app/__init__.py:77]
